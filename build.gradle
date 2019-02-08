@@ -1,13 +1,11 @@
 buildscript {
 	ext {
 		springBootVersion = '2.1.2.RELEASE'
-		lombokVersion='1.16.20'
 	}
 	repositories {
 		mavenCentral()
 	}
 	dependencies {
-		compile("org.projectlombok:lombok:$lombokVersion");
 		compile("com.h2database:h2");
 	
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
